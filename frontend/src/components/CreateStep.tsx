@@ -12,7 +12,7 @@ const MIN_GAS_PRICE = parseGwei("1");
 
 export function CreateStep() {
   const [title, setTitle] = useState("");
-  const [duration, setDuration] = useState(DURATION_OPTIONS[0].value);
+  const [duration, setDuration] = useState<number>(DURATION_OPTIONS[0].value);
   const { setStep, setLoading, fhevmStatus } = useAppStore();
   const { address } = useAccount();
   const processedHash = useRef<string | null>(null);
