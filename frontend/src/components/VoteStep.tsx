@@ -54,7 +54,7 @@ export function VoteStep() {
         abi: REFERENDUM_ABI,
         functionName: "vote",
         args: [BigInt(currentProposal.id), encrypted.handle, encrypted.inputProof],
-        gas: 3000000n,
+        gas: BigInt(3000000),
       });
     } catch {
       setIsEncrypting(false);
