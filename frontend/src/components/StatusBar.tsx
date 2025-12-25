@@ -52,8 +52,7 @@ export function StatusBar() {
     <div className="fixed top-0 right-0 z-50 flex items-center gap-4 p-4 text-xs font-mono tracking-wider uppercase">
       <span className={getStatusColor()}>{getStatusText()}</span>
 
-      {CONTRACT_ADDRESS !== "0x0000000000000000000000000000000000000000" && (
-        <a
+      <a
           href={`https://sepolia.etherscan.io/address/${CONTRACT_ADDRESS}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -62,7 +61,6 @@ export function StatusBar() {
           {shortenAddress(CONTRACT_ADDRESS)}
           <ExternalLink size={12} strokeWidth={1.5} />
         </a>
-      )}
 
       {address && (
         <>
