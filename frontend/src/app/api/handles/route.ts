@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
     const handles = await client.readContract({
       address: CONTRACT_ADDRESS,
       abi: REFERENDUM_ABI,
-      functionName: "getVoteHandles",
+      functionName: "getProposalHandles",
       args: [proposalId],
     });
 
