@@ -1,6 +1,6 @@
 # REFERENDUM
 
-Secret ballot meets blockchain. Traditional on-chain voting exposes every vote publicly, opening the door to coercion and vote buying. REFERENDUM uses Fully Homomorphic Encryption to keep votes encrypted from browser to blockchain. The chain tallies ciphertexts directly, revealing only the final result when voting closes.
+Encrypted voting on chain. Votes stay private, only the final count is revealed.
 
 **REFERENDUM solves this with FHE:**
 
